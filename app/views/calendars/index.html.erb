@@ -10,7 +10,8 @@
   <% @week_days.each do |day| %>
     <div class='item'>
       <div class='date'>
-        <%= day[:month] %>/<%= day[:date] %>
+        <%= day[:month] %>/<%= day[:date] %><%= day[:wdays]%> 
+        <%# 曜日のキーを指定したday[:]の値を表示させる %>
       </div>
       <ul class='content'>
         <% if day[:plans].length != 0 %>
